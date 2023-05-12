@@ -1,16 +1,33 @@
 <html>
 	<head>
 		<title>Burgers and Fries JavaScript IDE</title>
+		<script type="text/javascript">
+			function run_code() {
+				//get contents of textarea
+				//run eval on the resulting string
+			}
+
+			function load_code() {
+				//get contents of input tag
+				//get contents of file at that location
+				//write to textarea tag
+			}
+
+			function save_code() {
+				//get contents of input tag
+				//overwrite file at that location
+			}
+		</script>
 	</head>
 	<body>
 		Filepath: <input type="text" />
 		<br>
-		<input type="button" value="Load">
-		<input type="button" value="Save">
+		<input type="button" value="Load" onclick="load_code()">
+		<input type="button" value="Save" onclick="save_code()">
 		<br>
 		<textarea></textarea>
 		<br>
-		<input type="button" value="Run">
+		<input type="button" value="Run" onclick="run_code()">
 		<br>
 	</body>
 </html>
